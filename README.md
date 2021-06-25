@@ -18,11 +18,13 @@ Precisamos que você crie uma API REST-FULL para a utilização de restaurante, 
 
 **Sua aplicação DEVE:**
 
-1. Fazer login (garçom):
+1. Fazer login funcionario(garçom):
 - Deve apenas visualizar seus pedidos
 
-2. Fazer login (cozinheiro).
+2. Fazer login funcionario(cozinheiro).
 - Deve visualizar todos os pedidos em andamento e há fazer
+
+> Não precisa ter login cliente
 
 3. Cadastro de Clientes (nome, CPF)
 4. Fazer o cadastro das mesas do restaurante (número da mesa).
