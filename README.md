@@ -44,7 +44,7 @@ Precisamos que você crie uma API REST-FULL para a utilização de restaurante, 
 2. Testes unitários (pontos extras se fizer)
 3. Testes integrados (pontos extras se fizer)
 
-# Tecnologias que deve estar presentes no teste
+# Tecnologias que deve estar presentes no desafio
 
 - Laravel (obrigatório)
 - MySQL ou MariaDB
@@ -63,9 +63,10 @@ Seu projeto será avaliado de acordo com os seguintes critérios.
 2. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
 3. Você seguiu as instruções de envio do desafio?
 4. Boas práticas RestFull
-5. Clean Code
-6. SOLID
-7. Performance consultas
+5. Boas práticas Laravel
+6. Clean Code
+7. SOLID
+8. Performance consultas
 
 Adicionalmente, tentaremos verificar sua experiência com programação funcional a partir da estrutura de seu projeto.
 
