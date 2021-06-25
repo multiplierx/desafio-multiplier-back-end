@@ -18,15 +18,19 @@ Precisamos que você crie uma API REST-FULL para a utilização de restaurante, 
 
 **Sua aplicação DEVE:**
 
-1. Fazer login (garçom).
-2. Fazer login (cozinha).
-3. Cadastro de Clientes
-4. Fazer o cadastro das mesas do restaurante.
-5. Fazer o cadastro de cardapios.
-6. Fazer o pedido para a mesa.
+1. Fazer login (garçom):
+- Deve apenas visualizar seus pedidos
+
+2. Fazer login (cozinheiro).
+- Deve visualizar todos os pedidos em andamento e há fazer
+
+3. Cadastro de Clientes (nome, CPF)
+4. Fazer o cadastro das mesas do restaurante (número da mesa).
+5. Fazer o cadastro de cardapios (cardapios com os itens do cardapio).
+6. Fazer o pedido para a mesa do cliente.
 7. Listar todos os pedidos (filtros: dia, semana, mês, por mesa, por cliente).
-8. Listar pedidos em andamento, (para o garçon).
-9. Listar pedidos há fazer e em andamento, (para a cozinha).
+8. Listar pedidos em andamento, (para o garçom).
+9. Listar pedidos há fazer e em andamento, (para o cozinheiro).
 10. Listar por cliente, maior pedido, primeiro pedido, último pedido.
 
 11. População de dados:
