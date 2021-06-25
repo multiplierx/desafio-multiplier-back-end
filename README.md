@@ -36,7 +36,9 @@ Precisamos que você crie uma API REST-FULL para a utilização de restaurante, 
 11. População de dados:
  - Deve possuir uma base com 10K clientes
  - 50 cardapios
- - 400K pedidos 
+ - 400K pedidos
+
+> Dica: Utilize a biblioteca [faker](https://github.com/fakerphp/faker) para gerar os dados 😄
 
 **Sua aplicação web NÃO PRECISA:**
 
