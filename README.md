@@ -4,12 +4,12 @@ O intuito deste teste é avaliar seus conhecimentos técnicos de back-end.
 
 O teste consiste em fazer um sistema para um restaurante.
 
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser. Mas nos conte o tempo que levou para realizar o desafio.
+Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, mas nos conte o tempo que levou para realizar o desafio.
 
 # Instruções de entrega do desafio
 
 1. Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
-2. Em seguida, implemente o projeto tal qual descrito abaixo, em seu clone local.
+2. Em seguida, implemente o projeto conforme as instruções a seguir, em seu clone local.
 3. Por fim, envie via e-mail com o link do desafio, avisando quanto tempo levou para faze-lo.
 
 # Descrição do projeto
@@ -18,7 +18,7 @@ Precisamos que você crie uma API REST-FULL para a utilização de restaurante, 
 
 **Sua aplicação DEVE:**
 
-1. Fazer login (garçon).
+1. Fazer login (garçom).
 2. Fazer login (cozinha).
 3. Fazer o cadastro das mesas do restaurante.
 4. Fazer o cadastro de cardapios.
