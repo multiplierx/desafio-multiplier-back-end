@@ -1,73 +1,102 @@
-
 <p align="center">
-  <img src="https://multiplier.com.br/assets/multiplier.svg" width="320" alt="Nest Logo" />
+  <img src="images/logo.png" width="320" alt="Multiplier Logo" />
 </p>
 
+# Desafio Back End Laravel - Multiplier
 
-# Desafio Back-end Multiplier
-
-O intuito deste teste é avaliar seus conhecimentos técnicos de back-end.
-
-O teste consiste em fazer um sistema para um restaurante.
+O intuito deste teste é avaliar seus conhecimentos técnicos de back-end. O teste consiste em fazer um sistema CRUD para um gerenciamento de clientes, com validação de CNPJ para pessoas jurídicas através de uma API externa.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, mas nos conte o tempo que levou para realizar o desafio.
 
-# Instruções de entrega do desafio
+## Instruções de entrega do desafio
 
 1. Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
 2. Em seguida, implemente o projeto conforme as instruções a seguir, em seu clone local.
-3. Por fim, envie via e-mail com o link do desafio, avisando quanto tempo levou para faze-lo.
+3. Por fim, envie via e-mail com o link do desafio, avisando quanto tempo levou para fazê-lo.
 
-# Descrição do projeto
+## Descrição do projeto
 
-Precisamos que você crie uma API REST-FULL para a utilização de restaurante, que poderá ser utilizada para mobile ou um SPA.
+### Objetivo
 
-**Sua aplicação DEVE:**
+Desenvolver um sistema CRUD para gerenciamento de clientes, com validação de CNPJ para pessoas jurídicas através de uma API externa. O CRUD deve ser uma API REST com autenticação via Bearer Token. O projeto deve conter um dashboard monolítico para visualização dos clientes, com proteção contra ataques CSRF.
+### Requisitos
 
-1. Fazer login funcionario(garçom):
-- Deve apenas visualizar seus pedidos
+#### Clientes
 
-2. Fazer login funcionario(cozinheiro).
-- Deve visualizar todos os pedidos em andamento e há fazer
+- Campos Obrigatórios:
+    - Nome Fantasia
+    - CNPJ
+    - Endereço
+    - Cidade
+    - Estado
+    - País
+    - Telefone
+    - E-mail
+    - Área de Atuação | CNAE
+    - Quadro Societário (se disponível)
 
-> Não precisa ter login cliente
+#### CRUD de Clientes
 
-3. Cadastro de Clientes (nome, CPF)
-4. Fazer o cadastro das mesas do restaurante (número da mesa).
-5. Fazer o cadastro de cardapios (cardapios com os itens do cardapio).
-6. Fazer o pedido para a mesa do cliente.
-7. Listar todos os pedidos (filtros: dia, semana, mês, por mesa, por cliente).
-8. Listar pedidos em andamento, (para o garçom).
-9. Listar pedidos há fazer e em andamento, (para o cozinheiro).
-10. Listar por cliente, maior pedido, primeiro pedido, último pedido.
+- **Create**: Adicionar novos clientes
+- **Read**: Listar e visualizar detalhes dos clientes
+- **Update**: Atualizar informações dos clientes
+- **Delete**: Remover clientes
 
-11. População de dados:
- - Deve possuir uma base com 10K clientes
- - 50 cardapios
- - 400K pedidos
+#### Validação de CNPJ
 
-> Dica: Utilize a biblioteca [faker](https://github.com/fakerphp/faker) para gerar os dados 😄
+- Utilizar uma API externa para validar o CNPJ de pessoas jurídicas, verificando tanto o formato quanto a existência e validade do CNPJ.
+- Opções de API externa: Brasil API, ReceitaWS, Sintegra
 
-**Sua aplicação web NÃO PRECISA:**
+#### API REST
 
-1. Não precisa estar hospedada em nenhum servidor.
-2. Testes unitários (pontos extras se fizer)
-3. Testes integrados (pontos extras se fizer)
+- Desenvolver o CRUD em formato de API REST.
+- Implementar autenticação via Bearer Token.
+- Implementar tratamento e retorno adequado de erros, garantindo uma boa experiência para o usuário e integração com outros sistemas.
 
-# Tecnologias que deve estar presentes no desafio
+#### Dashboard Monolítico
 
-- Laravel (obrigatório)
+- Criar uma interface web utilizando Blade do Laravel para visualização resumida dos clientes.
+- Exibir informações como quantidade total de clientes cadastrados.
+- Implementar filtros por Estado, Cidade, País e Área de Atuação.
+- Implementar proteção contra ataques CSRF.
+
+### Obrigatórios
+
+- Documentação detalhada (principalmente para iniciar o projeto e para a API)
+- Utilização de Docker
+- Utilização de Git com commits convencionais
+- Banco de dados: MySQL ou MariaDB
+- Proteção contra ataques de injeção SQL
+- Implementação de cache para otimização de consultas ao banco de dados
+- Uso de migrations e seeders para estruturação e população inicial do banco de dados
+
+### Diferenciais
+
+- Rate limiting na API
+- Testes unitários e de integração robustos
+- Clean Code avançado
+- Boas práticas avançadas de Laravel
+- Adesão completa às PSR's
+- Implementação de recursos adicionais, como paginação, filtragem e ordenação na listagem de clientes.
+
+
+### Tecnologias
+
+- Laravel
+- Docker
 - MySQL ou MariaDB
-- PHP
+- Git
+- Bearer Token para autenticação
 
-**Não necessário mas se tiver será um diferencial**
+### Entrega
 
-- Testes Unitários
-- Testes integrados
+- O código deve ser hospedado em um repositório Git privado, garantindo a segurança do código.
+- Incluir um `README.md` detalhado com instruções para instalação, uso e detalhes da API.
 
-# Avaliação
+### Desafio Extra
 
-Seu projeto será avaliado de acordo com os seguintes critérios.
+Pense em um cenário onde a API externa para validação de CNPJ falhe ou esteja indisponível. Como seu sistema se comportaria? Desenvolva uma solução alternativa para garantir que o sistema continue funcionando, mesmo que de forma limitada, durante essas falhas.
+## Avaliação
 
 1. Sua aplicação preenche os requerimentos básicos?
 2. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
@@ -75,11 +104,6 @@ Seu projeto será avaliado de acordo com os seguintes critérios.
 4. Boas práticas RestFull
 5. Boas práticas Laravel
 6. Clean Code
-7. SOLID
-8. Performance consultas
-
-Adicionalmente, tentaremos verificar sua experiência com programação funcional a partir da estrutura de seu projeto.
-
----
+7. Performance consultas
 
 ## Boa sorte!
