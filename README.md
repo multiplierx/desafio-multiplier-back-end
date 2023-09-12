@@ -104,7 +104,6 @@ Pense em um cenário onde a API externa para validação de CNPJ falhe ou esteja
 4. Boas práticas RestFull
 5. Boas práticas Laravel
 6. Clean Code
-7. SOLID
-8. Performance consultas
+7. Performance consultas
 
 ## Boa sorte!
