@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://multiplier.com.br/assets/multiplier.svg" width="320" alt="Multiplier Logo" />
+  <img src="images/logo.png" width="320" alt="Multiplier Logo" />
 </p>
 
 # Desafio Back-end Multiplier
