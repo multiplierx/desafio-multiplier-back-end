@@ -1,73 +1,75 @@
-
 <p align="center">
-  <img src="https://multiplier.com.br/assets/multiplier.svg" width="320" alt="Nest Logo" />
+  <img src="https://multiplier.com.br/assets/multiplier.svg" width="320" alt="Multiplier Logo" />
 </p>
-
 
 # Desafio Back-end Multiplier
 
-O intuito deste teste é avaliar seus conhecimentos técnicos de back-end.
-
-O teste consiste em fazer um sistema para um restaurante.
+O intuito deste teste é avaliar seus conhecimentos técnicos de back-end. O teste consiste em fazer um sistema CRUD para um gerenciamento de clientes, com validação de CNPJ para pessoas jurídicas através de uma API externa.
 
 Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, mas nos conte o tempo que levou para realizar o desafio.
 
-# Instruções de entrega do desafio
+## Instruções de entrega do desafio
 
 1. Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir).
 2. Em seguida, implemente o projeto conforme as instruções a seguir, em seu clone local.
-3. Por fim, envie via e-mail com o link do desafio, avisando quanto tempo levou para faze-lo.
+3. Por fim, envie via e-mail com o link do desafio, avisando quanto tempo levou para fazê-lo.
 
-# Descrição do projeto
+## Descrição do projeto
 
-Precisamos que você crie uma API REST-FULL para a utilização de restaurante, que poderá ser utilizada para mobile ou um SPA.
+### Requisitos
 
-**Sua aplicação DEVE:**
+#### Clientes
 
-1. Fazer login funcionario(garçom):
-- Deve apenas visualizar seus pedidos
+- Campos Obrigatórios:
+    - Nome Fantasia
+    - CNPJ
+    - Endereço
+    - Telefone
+    - E-mail
 
-2. Fazer login funcionario(cozinheiro).
-- Deve visualizar todos os pedidos em andamento e há fazer
+#### CRUD de Clientes
 
-> Não precisa ter login cliente
+- **Create**: Adicionar novos clientes
+- **Read**: Listar e visualizar detalhes dos clientes
+- **Update**: Atualizar informações dos clientes
+- **Delete**: Remover clientes
 
-3. Cadastro de Clientes (nome, CPF)
-4. Fazer o cadastro das mesas do restaurante (número da mesa).
-5. Fazer o cadastro de cardapios (cardapios com os itens do cardapio).
-6. Fazer o pedido para a mesa do cliente.
-7. Listar todos os pedidos (filtros: dia, semana, mês, por mesa, por cliente).
-8. Listar pedidos em andamento, (para o garçom).
-9. Listar pedidos há fazer e em andamento, (para o cozinheiro).
-10. Listar por cliente, maior pedido, primeiro pedido, último pedido.
+#### Validação de CNPJ
 
-11. População de dados:
- - Deve possuir uma base com 10K clientes
- - 50 cardapios
- - 400K pedidos
+- Utilizar uma API externa para validar o CNPJ de pessoas jurídicas.
+- Opções de API externa: Brasil API, ReceitaWS, Sintegra
 
-> Dica: Utilize a biblioteca [faker](https://github.com/fakerphp/faker) para gerar os dados 😄
+#### API REST
 
-**Sua aplicação web NÃO PRECISA:**
+- Desenvolver o CRUD em formato de API REST.
+- Implementar autenticação.
 
-1. Não precisa estar hospedada em nenhum servidor.
-2. Testes unitários (pontos extras se fizer)
-3. Testes integrados (pontos extras se fizer)
+#### Dashboard Monolítico
 
-# Tecnologias que deve estar presentes no desafio
+- Criar uma interface web para visualização e gerenciamento dos clientes.
+
+### Obrigatórios
+
+- Documentação básica (principalmente para iniciar o projeto)
+- Utilização de Docker
+- Utilização de Git com commits convencionais
+- Banco de dados: MySQL ou MariaDB
+
+### Diferenciais
+
+- Testes unitários e de integração
+- Clean Code
+- Boas práticas de Laravel
+- Adesão às PSR's
+
+## Tecnologias
 
 - Laravel (obrigatório)
+- Docker
 - MySQL ou MariaDB
-- PHP
+- Git
 
-**Não necessário mas se tiver será um diferencial**
-
-- Testes Unitários
-- Testes integrados
-
-# Avaliação
-
-Seu projeto será avaliado de acordo com os seguintes critérios.
+## Avaliação
 
 1. Sua aplicação preenche os requerimentos básicos?
 2. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
@@ -77,9 +79,5 @@ Seu projeto será avaliado de acordo com os seguintes critérios.
 6. Clean Code
 7. SOLID
 8. Performance consultas
-
-Adicionalmente, tentaremos verificar sua experiência com programação funcional a partir da estrutura de seu projeto.
-
----
 
 ## Boa sorte!
