@@ -16,6 +16,9 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 ## Descrição do projeto
 
+### Objetivo
+
+Desenvolver um sistema CRUD para gerenciamento de clientes, com validação de CNPJ para pessoas jurídicas através de uma API externa. O CRUD deve ser uma API REST com autenticação via Bearer Token. O projeto deve conter um dashboard monolítico para visualização dos clientes, com proteção contra ataques CSRF.
 ### Requisitos
 
 #### Clientes
@@ -24,8 +27,13 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
     - Nome Fantasia
     - CNPJ
     - Endereço
+    - Cidade
+    - Estado
+    - País
     - Telefone
     - E-mail
+    - Área de Atuação | CNAE
+    - Quadro Societário (se disponível)
 
 #### CRUD de Clientes
 
@@ -36,39 +44,58 @@ Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quise
 
 #### Validação de CNPJ
 
-- Utilizar uma API externa para validar o CNPJ de pessoas jurídicas.
+- Utilizar uma API externa para validar o CNPJ de pessoas jurídicas, verificando tanto o formato quanto a existência e validade do CNPJ.
 - Opções de API externa: Brasil API, ReceitaWS, Sintegra
 
 #### API REST
 
 - Desenvolver o CRUD em formato de API REST.
-- Implementar autenticação.
+- Implementar autenticação via Bearer Token.
+- Implementar tratamento e retorno adequado de erros, garantindo uma boa experiência para o usuário e integração com outros sistemas.
 
 #### Dashboard Monolítico
 
-- Criar uma interface web para visualização e gerenciamento dos clientes.
+- Criar uma interface web utilizando Blade do Laravel para visualização resumida dos clientes.
+- Exibir informações como quantidade total de clientes cadastrados.
+- Implementar filtros por Estado, Cidade, País e Área de Atuação.
+- Implementar proteção contra ataques CSRF.
 
 ### Obrigatórios
 
-- Documentação básica (principalmente para iniciar o projeto)
+- Documentação detalhada (principalmente para iniciar o projeto e para a API)
 - Utilização de Docker
 - Utilização de Git com commits convencionais
 - Banco de dados: MySQL ou MariaDB
+- Proteção contra ataques de injeção SQL
+- Implementação de cache para otimização de consultas ao banco de dados
+- Uso de migrations e seeders para estruturação e população inicial do banco de dados
 
 ### Diferenciais
 
-- Testes unitários e de integração
-- Clean Code
-- Boas práticas de Laravel
-- Adesão às PSR's
+- Rate limiting na API
+- Testes unitários e de integração robustos
+- Clean Code avançado
+- Boas práticas avançadas de Laravel
+- Adesão completa às PSR's
+- Implementação de recursos adicionais, como paginação, filtragem e ordenação na listagem de clientes.
 
-## Tecnologias
 
-- Laravel (obrigatório)
+### Tecnologias
+
+- Laravel
 - Docker
 - MySQL ou MariaDB
 - Git
+- Bearer Token para autenticação
 
+### Entrega
+
+- O código deve ser hospedado em um repositório Git privado, garantindo a segurança do código.
+- Incluir um `README.md` detalhado com instruções para instalação, uso e detalhes da API.
+
+### Desafio Extra
+
+Pense em um cenário onde a API externa para validação de CNPJ falhe ou esteja indisponível. Como seu sistema se comportaria? Desenvolva uma solução alternativa para garantir que o sistema continue funcionando, mesmo que de forma limitada, durante essas falhas.
 ## Avaliação
 
 1. Sua aplicação preenche os requerimentos básicos?
